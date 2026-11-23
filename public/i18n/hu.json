@@ -1,4 +1,6 @@
 {
+    "nav.home": "Főmenü",
+	"nav.employee": "Dolgozók",
     "app.title": "Nemzetközi",
     "app.hello": "Helló",
     "app.helloMessage": "Helló, {{name}}!"

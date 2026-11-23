@@ -1,9 +1,15 @@
-<select (change)="switchLanguage($event)" class="language-select mb-3">
-  <option value="en">Angol</option>
-  <option value="hu">Magyar</option>
-  <option value="de">Német</option>
-  <option value="jp">Japán</option>
-</select>
+<div class="header-controls">
+  <nav class="nav main-nav">
+    <a routerLink="home" class="nav-link">{{'nav.home' | translate}}</a>
+    <a routerLink="home" class="nav-link">{{'nav.employee' | translate}}</a>
+  </nav>
+  <select (change)="switchLanguage($event)" class="form-select language-select mb-3">
+    <option value="en">English</option>
+    <option value="hu">Magyar</option>
+    <option value="de">Deutsch</option>
+    <option value="jp">日本語</option>
+  </select>
+</div>
 
 <h2>{{ 'app.title' | translate }}</h2>
 
@@ -18,3 +24,5 @@
 <p>
    {{ 'app.helloMessage' | translate:{name} }}
 </p>
+
+<router-outlet></router-outlet>

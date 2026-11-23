@@ -1,0 +1,32 @@
+.header-controls {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  background-color: aquamarine;
+  padding: 3px
+}
+
+.main-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.language-select {
+  width: auto;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+@media (max-width: 575px) {
+  .header-controls {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+ 
+  .main-nav {
+    position: static;
+    transform: none;
+  }
+}

@@ -1,4 +1,6 @@
 {
+    "nav.home": "Home",
+	"nav.employee": "Employee",
     "app.title": "International",
     "app.hello": "Hello",
     "app.helloMessage": "Hello, {{name}}!"
