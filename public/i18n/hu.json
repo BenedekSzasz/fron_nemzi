@@ -1,0 +1,5 @@
+{
+    "app.title": "Nemzetközi",
+    "app.hello": "Helló",
+    "app.helloMessage": "Helló, {{name}}!"
+}

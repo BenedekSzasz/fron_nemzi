@@ -1,0 +1,6 @@
+{
+    "hello": "こんにちは",
+    "app.title": "国際",
+    "app.hello": "こんにちは",
+    "app.helloMessage": "こんにちは、{{name}}!"
+}

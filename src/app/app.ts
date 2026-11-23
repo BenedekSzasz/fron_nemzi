@@ -1,12 +1,24 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, TranslatePipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('nemzi');
+  translate = inject(TranslateService);
+
+  name = "Szánt Ernő"
+
+  ngOnInit() {
+    this.translate.addLangs(['en', 'hu', 'de', 'jp']);
+    this.translate.use('hu');
+  }
+
+  switchLanguage(event: Event) {
+    this.translate.use((event.target as HTMLSelectElement).value)
+  }
 }

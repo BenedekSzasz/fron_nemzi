@@ -1,0 +1,6 @@
+{
+    "app.title": "International",
+    "app.hello": "Hello",
+    "app.helloMessage": "Hello, {{name}}!"
+    
+}
